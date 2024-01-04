@@ -1,11 +1,12 @@
 import { IoCall } from "react-icons/io5";
-import { FaVideo,FaExclamationCircle  } from "react-icons/fa";
+import { FaVideo,FaExclamationCircle ,FaArrowLeft  } from "react-icons/fa";
 import { BsFillSendFill } from "react-icons/bs";
-const RigttSidebar = () => {
+const RigttSidebar = ({setShow}) => {
   return (
     <div>
       <div className="py-4 border-b border-white flex items-center px-5 justify-between">
         <div className="flex items-center gap-2">
+        <span onClick={()=>setShow(false)} className="text-xl mr-2 md:hidden block text-blue-600 cursor-pointer"><FaArrowLeft /></span>
           <img
             className="w-10 bg-cover border-2 border-white rounded-full h-10"
             src="./profile.png"

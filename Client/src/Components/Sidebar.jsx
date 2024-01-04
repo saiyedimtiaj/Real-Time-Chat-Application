@@ -3,7 +3,7 @@ import { IoMdNotifications } from "react-icons/io";
 import { FaSearch } from "react-icons/fa";
 import UserProfile from "./UserProfile";
 
-const Sidebar = () => {
+const Sidebar = ({setShow}) => {
     return (
         <div className="">
           <div className="sticky">
@@ -18,7 +18,7 @@ const Sidebar = () => {
             </div>
           </div>
             <div className="px-3 h-[calc(100vh-140px)] overflow-y-scroll bg-[#111] border-t space-y-2 border-gray-500 pt-2">
-                <UserProfile/>
+                <div onClick={()=>setShow(true)}><UserProfile/></div>
                 <UserProfile/>
                 <UserProfile/>
                 <UserProfile/>
