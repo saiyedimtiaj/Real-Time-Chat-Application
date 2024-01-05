@@ -17,7 +17,7 @@ const Sidebar = ({setShow}) => {
                 <span className="absolute text-gray-600 right-6 top-2 border-l border-gray-600 pl-2 py-1 text-xl" ><FaSearch/></span>
             </div>
           </div>
-            <div className="px-3 h-[calc(100vh-140px)] overflow-y-scroll bg-[#111] border-t space-y-2 border-gray-500 pt-2">
+            <div className="px-3 h-[calc(100vh-130px)] overflow-y-scroll bg-[#111] border-t space-y-2 border-gray-500 pt-2">
                 <div onClick={()=>setShow(true)}><UserProfile/></div>
                 <UserProfile/>
                 <UserProfile/>

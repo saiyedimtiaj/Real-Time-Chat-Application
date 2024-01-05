@@ -11,7 +11,7 @@ const Home = () => {
                 <div className={show === true ? "hidden md:block" : "md:max-w-80 w-full bg-[#111] h-screen"}>
                     <Sidebar setShow={setShow} />
                 </div>
-                <div className={'flex-1'}>
+                <div className={show === true ? 'block' : show === false ? 'hidden md:block md:w-full' : 'flex-1'}>
                     <RigttSidebar setShow={setShow} />
                 </div>
             </div>
